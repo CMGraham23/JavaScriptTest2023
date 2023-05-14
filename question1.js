@@ -1,16 +1,4 @@
-/*
-Q1: 
 
-Write a function that takes in an array of numbers and uses a callback function to filter out even numbers. The function should implement the callback function as a separate function that takes a single argument (a number) and returns true if the number is even and false otherwise.
-
-Input Format
-arr: An array of numbers to be filtered.
-isEven: A function that takes a single argument (a number) and returns true if the number is even and false otherwise.
-Output Format
-The function should return a new array containing only the odd numbers from the input array.
-
-
-*/
 
 function isEven(num) {
 	return num % 2 === 0;
