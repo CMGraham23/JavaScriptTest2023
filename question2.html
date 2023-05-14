@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question2.css">
+    <title>Document</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="myvideo.mp4" type="video/mp4">
+        
+      </video>
+      
+      <div class="content">
+        <button id="myBtn" onclick="myFunction()">||</button>        
+        <button id="myBtn" onclick="advanceFunction()"><<</button>
+        <button id="myBtn" onclick="backwardFunction()">>></button>
+        <progress id="progressBar" value="0" max="100"></progress>  
+ 
+        <div class="slidecontainer">
+            <button id="" onchange="changeVolume()")>||</button>  
+            <p>Volume</p>
+            <input id="myvolume" type="range" min="0" max="100" value="50">               
+        </div>       
+      </div>
+
+          <script src="question2.js"></script>
+
+
+</body>
+</html>
