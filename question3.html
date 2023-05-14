@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link><link rel="stylesheet" href="question3.css"></link> 
+    <title>Document</title>
+</head>
+<body>  
+        
+    <div class="container">
+        
+        <form>                
+              <h1>The Voiceinator 5000</h1>
+
+            <div class="col-75">
+                    <select id="speaker" name="country">
+                    <option value="australia">Rishi (en-IN)</option>
+                    <option value="canada">Christine (en-IN)</option>
+                    <option value="usa">Jane (en -IN)</option>
+                    </select>
+           
+
+            <div class="slidecontainer">
+                        <button id="" onchange="changeVolume()")></button>  
+                        <p>Rate:</p>
+                        <input id="myvolume" type="range" min="0" max="100" value="50">  
+                        <button id="" onchange="changeVolume()")></button>  
+                        <p>Pitch:</p>
+                        <input id="myvolume" type="range" min="0" max="100" value="50">               
+            </div>     
+            </div>
+                
+                <div class="row">
+                <div class="col-25">               
+                </div>
+
+                
+                <div class="col-75">
+                    <textarea id="mytext" name="mytext" placeholder="Write something.." style="height:200px">
+                    </textarea>
+                </div>
+            </div>
+                
+        </form> 
+          <audio autoplay muted loop id="myVideo">
+            <source src="" type="video/mp4">            
+        </audio>
+        
+          <div class="content">
+            <button id="myBtn" onclick="myFunction()">stop</button>        
+            <button id="myBtn" onclick="advanceFunction()">speak</button>
+          </div>  
+            
+        </div>
+
+              
+          </div>
+    
+              <script src="question3.js"></script>  
+
+            </body>
+</html>

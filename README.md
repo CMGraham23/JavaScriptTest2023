@@ -50,3 +50,46 @@ References: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Gl
 
 
 
+
+
+
+//5. Add an event listener for the rate and pitch ranges
+rateRange.addEventListener("input", function(){
+    rate = rateRange.value;
+    speak(text, voice, rate, pitch);
+});
+
+pitchRange.addEventListener("input", function(){
+    pitch = pitchRange.value;
+    speak(text, voice, rate, pitch);
+});
+
+
+
+//7. Add an event listener for the play button
+play.addEventListener("click", function(){
+    speak(text, voice, rate, pitch);
+});
+
+//8. Add an event listener for the pause button
+pause.addEventListener("click", function(){
+    speechSynthesis.pause();
+});
+
+//9. Add an event listener for the stop button
+stop.addEventListener("click", function(){
+    speechSynthesis.resume();
+});
+
+//10. Add an event listener for the resume button
+resume.addEventListener("click", function(){
+    speechSynthesis.resume();
+});
+
+
+
+
+
+
+
+
